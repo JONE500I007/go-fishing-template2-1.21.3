@@ -16,6 +16,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RAW_GREEDILY_FISH))
                     .displayName(Text.translatable("itemgroup.go-fishing.raw_greedily_fish"))
                     .entries(((displayContext, entries) -> {
+                        entries.add(ModItems.FISHING_COIN);
                         entries.add(ModItems.RAW_BLUE_FISH);
                         entries.add(ModItems.COOKED_BLUE_FISH);
                         entries.add(ModItems.RAW_GREEDILY_FISH);
