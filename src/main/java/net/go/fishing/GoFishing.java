@@ -2,6 +2,10 @@ package net.go.fishing;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.go.fishing.block.ModBlocks;
+import net.go.fishing.block.ModBlocks2;
+import net.go.fishing.component.ModDataComponentTypes;
+import net.go.fishing.item.ModItemGroups;
 import net.go.fishing.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +21,11 @@ public class GoFishing implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModBlocks2.registerModBlocks();
+		ModItemGroups.registerItemGroups();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
