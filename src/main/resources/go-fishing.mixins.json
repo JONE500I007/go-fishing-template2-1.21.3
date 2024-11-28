@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"package": "net.go.fishing.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin",
+		"override_cap.InventoryMixin",
+		"override_cap.DataComponentTypeMixin",
+		"override_cap.ItemCommandMixin",
+		"override_cap.ItemStackMixin",
+
+		"ItemStackMixin",
+		"AdjustStackSizeOnPickupMixin",
+		"PlayerInventoryMixin",
+		"ScreenHandlerMixin",
+		"SlotMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
