@@ -1,0 +1,6 @@
+{
+  "parent": "go-fishing:item/bamboo_fishing_rod",
+  "textures": {
+    "layer0": "go-fishing:item/bamboo_fishing_rod_cast"
+  }
+}

@@ -13,7 +13,10 @@
 		"AdjustStackSizeOnPickupMixin",
 		"PlayerInventoryMixin",
 		"ScreenHandlerMixin",
-		"SlotMixin"
+		"SlotMixin",
+
+		"FishingBobberAccessor",
+		"FishingBobberValidityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

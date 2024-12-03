@@ -17,6 +17,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.go-fishing.raw_greedily_fish"))
                     .entries(((displayContext, entries) -> {
                         entries.add(ModItems.FISHING_COIN);
+                        //entries.add(ModItems.BETTER_FISHING_ROD);
                         entries.add(ModItems.RAW_BLUE_FISH);
                         entries.add(ModItems.COOKED_BLUE_FISH);
                         entries.add(ModItems.RAW_GREEDILY_FISH);

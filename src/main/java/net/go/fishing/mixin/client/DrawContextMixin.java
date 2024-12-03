@@ -15,9 +15,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import static java.lang.String.valueOf;
 
-//@Mixin(DrawContext.class)
+@Mixin(DrawContext.class)
 public class DrawContextMixin {
-    /*
+
 	@Unique
 	private static int adjustmentClock =0;
 	@Shadow @Final private MatrixStack matrices;
@@ -29,8 +29,7 @@ public class DrawContextMixin {
 	private static final int   yAdjust3 = -1;
 
 
-
-	@Inject( method = "drawItemInSlot(Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/item/ItemStack;IILjava/lang/String;)V", at=@At("HEAD"), cancellable = true)
+	//@Inject( method = "drawItemInSlot(Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/item/ItemStack;IILjava/lang/String;)V", at=@At("HEAD"), cancellable = true)
 	private void overrideDrawFourDigits(TextRenderer textRenderer, ItemStack stack, int x, int y, @Nullable String countOverride, CallbackInfo info) {
 		DrawContext context= (DrawContext)(Object) this;
 		int count = stack.getCount();
@@ -54,6 +53,5 @@ public class DrawContextMixin {
 			info.cancel();
 		}
 	}
-     */
 
 }

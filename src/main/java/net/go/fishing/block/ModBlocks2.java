@@ -2,6 +2,7 @@ package net.go.fishing.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.go.fishing.GoFishing;
+import net.go.fishing.item.ModFoodComponents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -29,7 +30,7 @@ public class ModBlocks2 {
     private static void registerBlockItem2(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(GoFishing.MOD_ID, name),
                 new BlockItem(block, new Item.Settings().maxCount(99)
-                        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, name)))));
+                        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, name))).food(ModFoodComponents.TEST_BLOCK_OF_ONE)));
     }
 
     public static void registerModBlocks() {
