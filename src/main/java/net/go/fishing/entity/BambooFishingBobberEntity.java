@@ -19,7 +19,8 @@ import net.minecraft.world.World;
 
 import java.util.Collections;
 
-public class BambooFishingBobberEntity extends FishingBobberEntity {
+public class BambooFishingBobberEntity /*extends FishingBobberEntity*/ {
+    /*
     public BambooFishingBobberEntity(EntityType<? extends FishingBobberEntity> type, World world, int luckOfTheSeaLevel, int lureLevel) {
         super(type, world, luckOfTheSeaLevel, lureLevel);
     }
@@ -32,7 +33,6 @@ public class BambooFishingBobberEntity extends FishingBobberEntity {
     public BambooFishingBobberEntity(PlayerEntity thrower, World world, int luckOfTheSeaLevel, int lureLevel) {
         super(thrower, world, luckOfTheSeaLevel, lureLevel);
     }
-     */
 
     private boolean removeIfInvalid(PlayerEntity player) {
         ItemStack itemStack = player.getMainHandStack();
@@ -124,4 +124,5 @@ public class BambooFishingBobberEntity extends FishingBobberEntity {
         this.discard();
         return i;
     }
+    */
 }

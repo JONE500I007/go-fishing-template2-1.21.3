@@ -40,20 +40,7 @@ public abstract class FishingBobberValidityMixin extends Entity {
                 || offHandStack.isOf(ModItems.BAMBOO_FISHING_ROD);
 
         if (!playerEntity.isRemoved() && playerEntity.isAlive() && (mainHandHasRod || offHandHasRod) && this.squaredDistanceTo(playerEntity) <= 1024.0D) {
-            if (mainHandHasRod) {
-                this.updateFishingLine(playerEntity, Hand.MAIN_HAND);
-            } else if (offHandHasRod) {
-                this.updateFishingLine(playerEntity, Hand.OFF_HAND);
-            }
             cir.setReturnValue(false);
-        }
-    }
-
-    private void updateFishingLine(PlayerEntity playerEntity, Hand hand) {
-        if (hand == Hand.MAIN_HAND) {
-            this.setPos(playerEntity.getX(), playerEntity.getEyeY(), playerEntity.getZ());
-        } else if (hand == Hand.OFF_HAND) {
-            this.setPos(playerEntity.getX() - 0.2, playerEntity.getEyeY(), playerEntity.getZ());
         }
     }
 }
