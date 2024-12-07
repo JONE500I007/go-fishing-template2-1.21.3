@@ -3,6 +3,7 @@ package net.go.fishing.item;
 import net.go.fishing.DataDrivenStacks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.go.fishing.GoFishing;
+import net.go.fishing.item.custom.CustomFishingRodItem;
 import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;

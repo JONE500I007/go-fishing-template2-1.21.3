@@ -5,56 +5,23 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "value": "minecraft:gameplay/fishing/fish_savanna"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:location_check",
-          "predicate": {
-            "biomes": "minecraft:savanna"
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "value": "minecraft:gameplay/fishing/fish_river"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:location_check",
-          "predicate": {
-            "biomes": "minecraft:river"
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "value": "minecraft:gameplay/fishing/normal_fish"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "biomes": [
-                "minecraft:savanna",
-                "minecraft:river"
-              ]
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_block",
+          "weight": 25,
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:river"
+              }
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": "go-fishing:bamboo_fishing_rod"
+              }
             }
-          }
+          ]
         }
       ]
     }
