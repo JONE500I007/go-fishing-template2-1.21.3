@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModLootTableModifiers {
     /*
-    private static final Identifier JUNGLE_TEMPLE_ID = new Identifier("minecraft", "chests/jungle_temple");
+    private static final Identifier JUNGLE_TEMPLE_ID = Identifier.of("minecraft", "chests/jungle_temple");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {

@@ -14,6 +14,8 @@
 
   "itemgroup.go-fishing.raw_greedily_fish": "Item Mod Go Fishing",
 
+  "entity.minecraft.villager.fishing_master": "Fishing Master",
+
 
   "commands.give.failed.toomanyitems.stacks"      : "Can't give more than %s stacks of %s"    ,
   "commands.give.success.multiple.stack"          : "Gave a stack of %s to %s players"        ,

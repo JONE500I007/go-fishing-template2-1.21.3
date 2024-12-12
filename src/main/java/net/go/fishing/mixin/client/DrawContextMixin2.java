@@ -53,6 +53,5 @@ public class DrawContextMixin2 {
 			info.cancel();
 		}
 	}
-
 	 */
 }

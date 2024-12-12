@@ -16,7 +16,9 @@
 		"SlotMixin",
 
 		"FishingBobberAccessor",
-		"FishingBobberValidityMixin"
+		"FishingBobberValidityMixin",
+		"FishingBobberEntityRendererMixin",
+		"FishingBobberEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -26,8 +26,6 @@ public class ModBlocks {
                     .strength(2.0f, 3.0f)
                     .sounds(BlockSoundGroup.WOOD)));
 
-
-
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(GoFishing.MOD_ID, name), block);
@@ -38,8 +36,6 @@ public class ModBlocks {
                 new BlockItem(block, new Item.Settings()
                         .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, name)))));
     }
-
-
 
     public static void registerModBlocks() {
         GoFishing.LOGGER.info("Registering Mod Items for " + GoFishing.MOD_ID);

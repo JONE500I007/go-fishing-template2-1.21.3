@@ -8,8 +8,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
-@Mixin(DrawContext.class)
+//@Mixin(DrawContext.class)
 public class DrawContextMixin {
+    /*
 
     @ModifyVariable(method = "Lnet/minecraft/client/gui/DrawContext;drawStackCount(Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/item/ItemStack;IILjava/lang/String;)V", at = @At("HEAD"), ordinal = 0, argsOnly = true)
     private String modifyString(String value, TextRenderer textRenderer, ItemStack stack, int x, int y, @Nullable String countOverride)
@@ -36,4 +37,6 @@ public class DrawContextMixin {
 
         return "";
     }
+
+     */
 }

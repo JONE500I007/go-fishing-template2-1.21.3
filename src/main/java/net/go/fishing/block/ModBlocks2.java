@@ -29,7 +29,7 @@ public class ModBlocks2 {
 
     private static void registerBlockItem2(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(GoFishing.MOD_ID, name),
-                new BlockItem(block, new Item.Settings().maxCount(99)
+                new BlockItem(block, new Item.Settings().maxCount(99).food(ModFoodComponents.TEST_BLOCK_OF_ONE)
                         .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, name))).food(ModFoodComponents.TEST_BLOCK_OF_ONE)));
     }
 

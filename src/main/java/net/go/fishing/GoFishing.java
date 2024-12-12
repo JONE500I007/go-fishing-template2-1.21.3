@@ -7,6 +7,8 @@ import net.go.fishing.block.ModBlocks2;
 import net.go.fishing.component.ModDataComponentTypes;
 import net.go.fishing.item.ModItemGroups;
 import net.go.fishing.item.ModItems;
+import net.go.fishing.util.ModCustomTrades;
+import net.go.fishing.villager.ModVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,6 +28,8 @@ public class GoFishing implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModDataComponentTypes.registerDataComponentTypes();
+
+		ModCustomTrades.registerCustomTrades();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
